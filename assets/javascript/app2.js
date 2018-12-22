@@ -9,30 +9,9 @@ var startBtn;
 var clockRunning;
 var submitBtn;
 
-
-/// current IDs
-//startBtn
-//timer
-//rightScore
-//wrongScore
-//ques1
-//ans1
-//ans2
-//ans3
-//ans4
-//submitBtn
-
-/// functions ///
-///start game
-///clear game
-///timer 
-///randomize question assignment
-///randomize answer assignment
-///submit function
-
 var rightScore = 0;
-var wrongScore = 5 - rightScore;
-var count = 10;
+var wrongScore = 4 - rightScore;
+var count = 30;
 var intervalId;
 var index = 0;
 var clockRunning = false;
@@ -79,15 +58,12 @@ console.log(rightAns);
     $("#ans43").text(QnA[3][3]);
     $("#ans44").text(QnA[3][4]);
 
-   
-
     if (clockRunning === false) {
       timer();
     }
   }
 
   ///where do i put clockRunning true statement
-  
   
   function timer() {
    clearInterval(intervalId);
@@ -123,10 +99,6 @@ console.log(rightAns);
     $("#wrongScore").text(wrongScore);
     $("#wrongScore2").text(wrongScore);
   }
-
-  
-
-
 
   console.log(timer);
   console.log(startGame);
