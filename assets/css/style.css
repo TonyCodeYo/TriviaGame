@@ -1,1 +1,20 @@
-body {}
+body { 
+  font-family: monospace;
+  background: #F1ECF7;
+  
+}
+
+.container {
+  background: #F1ECF7;
+}
+
+#startBtn {
+  background-color: rgb(210, 227, 241);
+}
+#jumbo {
+  background-color: rgb(182, 150, 179);
+}
+#trivia {
+  font-family: monospace;
+  
+}
