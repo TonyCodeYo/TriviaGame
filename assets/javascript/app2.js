@@ -30,22 +30,20 @@ var submitBtn;
 ///randomize answer assignment
 ///submit function
 
-
-
-var count = 5;
+var rightScore = 0;
+var wrongScore = 0;
+var count = 10;
 var intervalId;
 var index = 0;
+var clockRunning = false;
+
 arrayQnA = [
-  ["ques1", "ans1_1", "wrong-11", "wrong-12", "wrong-13"],
-  ["ques2", "ans2_1", "wrong-21", "wrong-22", "wrong-23"],
-  ["ques3", "ans3_1", "wrong-31", "wrong-32", "wrong-33"],
-  ["ques4", "ans4_1", "wrong-41", "wrong-42", "wrong-43"],
-  ["ques5", "ans5_1", "wrong-51", "wrong-52", "wrong-53"]
+  ["What was my first car?", "Audi 5000s", "Nissan Maxima", "Honda Civic", "Mercedes C-class"],
+  ["What year was I born?", "1991", "1987", "1983", "1979"],
+  ["Where was my mother born?", "USA", "Phillipines", "Ireland", "Portugal"],
+  ["How many siblings do I have?", "1", "2", "3", "4"],
+  ["What is my guilty pleasure?", "Real World: Challenge", "Big Brother", "WWE", "All of the above"]
 ];
-
-
-
-
   function startGame() {
     $("#quesYo").text(arrayQnA[index][0]);
     $("#ans1").text(arrayQnA[index][1]);
@@ -53,13 +51,17 @@ arrayQnA = [
     $("#ans3").text(arrayQnA[index][3]);
     $("#ans4").text(arrayQnA[index][4]);
 
-    timer();
+    if (clockRunning === false) {
+      timer();
+    }
   }
+
+  ///where do i put clockRunning true statement
+  
   
   function timer() {
    clearInterval(intervalId);
    intervalId = setInterval(counter, 1000);
-   
   }
 
   function counter() {
@@ -67,17 +69,29 @@ arrayQnA = [
     $("#timer").text(count);
     if (count === 0){
       clearInterval(intervalId);
+      $("#timer").text("Time is up !!!");
+      showResults();
     }
-    
   }
-
-  if (counter === 0) {
-    alert("times up")
-    }
 
   $("#startBtn").on("click", function () {
     startGame();
   })
+
+  $("#submitBtn").on("click", function () {
+    showResults();
+    clearInterval(intervalId);
+    $("#timer").text("Check out your score !!!");
+  })
+
+  function showResults() {
+    $("#rightScore").text(rightScore);
+    $("#wrongScore").text(wrongScore);
+  }
+
+  
+
+
 
   console.log(timer);
   console.log(startGame);
