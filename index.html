@@ -38,154 +38,73 @@
         </span>
       </h1>
       <h2>Do you know me?</h2>
-        <h3>
-          <div class="btn-outline-dark margin-auto" id="startBtn">Start</div>
-        </h3>
+      <h3>
+        <div class="btn-outline-dark margin-auto" id="startBtn">Start</div>
+      </h3>
     </div>
-  <div class="container">
+
     <div id="scoreboard" class="card text-center">
       <div>
         <h3><span id="timer">00:30</span></h3>
       </div>
       <div>
-        <h5>Answered right: <span id="rightScore"></span></h5>
+        <h5>Answered right: <span id="rightScore">0</span></h5>
       </div>
-        <h5>Answered wrong: <span id="wrongScore"></span></h5>
+      <h5>Answered wrong: <span id="wrongScore">0</span></h5>
+    </div>
+
+    <form>
+      <div id="q1">
+        <h3>What was my first car?</h3>
+        <input type="radio" name="ans1" value="a"> Audi 5000x <br>
+        <input type="radio" name="ans1" value="b"> Nissan Maxima <br>
+        <input type="radio" name="ans1" value="c"> Honda Civic <br>
+        <input type="radio" name="ans1" value="d"> Mercedes C-class <br>
       </div>
       <br>
-  <div class="container">
-    <div class="card row">
-      <div class="card-header">
-          <h4 id="quesYo1"></h4>
+      <div id="q2">
+        <h3>What year was I born?</h3>
+        <input type="radio" name="ans2" value="a"> 1991 <br>
+        <input type="radio" name="ans2" value="b"> 1987 <br>
+        <input type="radio" name="ans2" value="c"> 1983 <br>
+        <input type="radio" name="ans2" value="d"> 1979 <br>
       </div>
-      <div class="card-body">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
-          <label class="form-check-label" for="exampleRadios1" id="ans11">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
-          <label class="form-check-label" for="exampleRadios2" id="ans12">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option3" checked>
-          <label class="form-check-label" for="exampleRadios3" id="ans13">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option4">
-          <label class="form-check-label" for="exampleRadios4" id="ans14">
-          </label>
-        </div>
-    </div>
-  </div> 
-  <br>
-  <div class="container">
-    <div class="card row">
-      <div class="card-header">
-          <h4 id="quesYo2"></h4>
+      <br>
+      <div id="q3">
+        <h3>Where was my mother born?</h3>
+        <input type="radio" name="ans3" value="a"> USA <br>
+        <input type="radio" name="ans3" value="b"> Phillipines <br>
+        <input type="radio" name="ans3" value="c"> Ireland <br>
+        <input type="radio" name="ans3" value="d"> Portugal <br>
       </div>
-      <div class="card-body">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
-          <label class="form-check-label" for="exampleRadios1" id="ans21">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
-          <label class="form-check-label" for="exampleRadios2" id="ans22">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option3" checked>
-          <label class="form-check-label" for="exampleRadios3" id="ans23">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option4">
-          <label class="form-check-label" for="exampleRadios4" id="ans24">
-          </label>
-        </div>
-      </div> 
-    </div>
-    <br>
-  <div class="container">
-    <div class="card">
-    <div class="card-header">
-      <h4 id="quesYo3"></h4>
-    </div>
-    <div class="card-body">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
-        <label class="form-check-label" for="exampleRadios1" id="ans31">
-        </label>
+      <br>
+      <div id="q4">
+        <h3>How many siblings do I have?</h3>
+        <input type="radio" name="ans4" value="a"> 1 <br>
+        <input type="radio" name="ans4" value="b"> 2 <br>
+        <input type="radio" name="ans4" value="c"> 3 <br>
+        <input type="radio" name="ans4" value="d"> 4 <br>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
-        <label class="form-check-label" for="exampleRadios2" id="ans32">
-        </label>
+      <br>
+      <div id="q5">
+        <h3>What is my guilty pleasure?</h3>
+        <input type="radio" name="ans5" value="a"> WWE <br>
+        <input type="radio" name="ans5" value="b"> Survivor <br>
+        <input type="radio" name="ans5" value="c"> Real World: Challenge <br>
+        <input type="radio" name="ans5" value="d"> All of the above <br>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" value="option3" checked>
-        <label class="form-check-label" for="exampleRadios3" id="ans33">
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" value="option4">
-        <label class="form-check-label" for="exampleRadios4" id="ans34">
-        </label>
-      </div>
-    </div>
+
+      <button id="submitBtn">
+        <h3>Submit</h3>
+      </button>
+    </form>
   </div>
-  <br>
-  <div class="container">
-    <div class="card">
-      <div class="card-header">
-        <h4 id="quesYo4"></h4>
-      </div>
-      <div class="card-body">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
-          <label class="form-check-label" for="exampleRadios1" id="ans41">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
-          <label class="form-check-label" for="exampleRadios2" id="ans42">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option3" checked>
-          <label class="form-check-label" for="exampleRadios3" id="ans43">
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" value="option4">
-          <label class="form-check-label" for="exampleRadios4" id="ans44">
-          </label>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="btn-secondary text-center" id="submitBtn">
-      <h3>Submit</h3>
-    </div>
-    <div id="scoreboard" class="card text-center">
-      <div>
-        <h3><span id="timer2">00:30</span></h3>
-      </div>
-      <div>
-        <h5>Answered right: <span id="rightScore2"></span></h5>
-      </div>
-      <h5>Answered wrong: <span id="wrongScore2"></span></h5>
-    </div>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./assets/javascript/app2.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/javascript/app2.js"></script>
 
 </body>
 

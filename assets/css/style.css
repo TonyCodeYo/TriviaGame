@@ -1,7 +1,14 @@
 body { 
   font-family: monospace;
   background: #F1ECF7;
-  
+}
+
+form {
+  background: lightgray;
+  border: 1px solid #000;
+  padding: 2%;
+  border-radius: 12px;
+  margin: 0 auto;
 }
 
 .container {
@@ -13,8 +20,29 @@ body {
 }
 #jumbo {
   background-color: rgb(182, 150, 179);
+  border: 1px solid purple;
+  border-radius: 12px;
 }
 #trivia {
   font-family: monospace;
   
+}
+
+#scoreboard  {
+  display: none;
+  position: fixed;
+  top: 5%;
+  width: 34%;
+  right: 2%;
+  z-index: 99;
+  border: 13px solid lightblue;
+  border-radius: 25px;
+  background: blue;
+  color: white;
+}
+
+#submitBtn {
+  margin: 2%;
+  color:white;
+  background: blue;
 }
